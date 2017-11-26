@@ -1,7 +1,7 @@
 # EPITA_annales
 Des documents pour pouvoir taffer
 
-N'hésitez pas à faire des ajouts si vous avez des docs.
+N'hésitez pas à faire des ajouts si vous avez des docs qui pourraient aider les autres.
 
 ## Une liste de liens intéressants pour bosser :
 * [ici](LiensUtiles.md)

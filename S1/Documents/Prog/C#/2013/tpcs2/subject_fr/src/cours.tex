@@ -1,0 +1,107 @@
+\section{Cours}
+
+\subsection{La console}
+En bons utilisateurs de Windows vous aimez cliquer sur des boutons avec votre
+souris dans votre jolie interface graphique. Mais vous ne savez peut-être pas
+qu'il existe un autre monde, plus rapide, plus sombre, qui fera croire à toute
+personne extérieure que vous êtes un hacker confirmé: la console.\\
+En effet, pendant la préhistoire\footnote{Au moins\ldots 1970 !}, les
+informaticiens n'avaient à leur disposition qu'une interface en ligne de
+commande dans un écran affichant 80 colonnes de texte.\\
+Malgré l'utilisation massive des interfaces graphiques (GUI = Graphical User
+Interface) de nos jours, la console et ses commandes textuelles résistent encore
+et toujours grâce à leur efficacité.
+
+\subsection{L'invite de commandes Windows}
+Chaque version de Windows dispose d'une console héritée de l'époque de MS-DOS
+et accessible en lançant \textbf{cmd.exe} (avec Win+R par exemple): l'invite de
+commandes.\\
+Vous pouvez dans celle-ci exécuter tout un tas d'actions mais aussi les
+regrouper dans des scripts afin d'automatiser des tâches
+facilement.\footnote{Et oui, un .bat ne sert pas qu'à détruire votre
+ordinateur.}\\
+Voici les principales commandes:
+
+\begin{description}
+    \item[dir] \hfill \\
+        Liste les fichiers du dossier courant.
+    \item[cd] \hfill \\
+        Change le dossier courant.
+    \item[copy] \hfill \\
+        Copie un fichier à un autre endroit.
+    \item[mov] \hfill \\
+        Déplace un fichier.
+    \item[print] \hfill \\
+        Affiche un fichier.
+\end{description}
+
+Il est également possible de lancer n'importe quel exécutable simplement en
+tapant son nom (précédé du chemin pour y accéder s'il n'est pas dans le dossier
+courant).\\
+Cette interface est toutefois assez limitée et n'est aujourd'hui conservée que
+pour des raisons de compatibilité.
+
+\subsection{Powershell}
+Comme son nom l'indique (un shell est un interpréteur de commandes) il s'agit
+d'une nouvelle version de la console Windows introduite dans Windows 7.\\
+Son fonctionnement se rapproche plus des équivalents Unix avec des noms de
+commandes proches et l'apparitions de fonctionnalités évolués telles que les
+redirections de flux.
+\footnote{http://fr.wikibooks.org/wiki/Programmation\_Bash/Flux\_et\_redirections}\\
+Les commandes expliquées précédemment deviennent celles-ci:
+
+\begin{description}
+    \item[ls] \hfill \\
+        Liste les fichiers du dossier courant.
+    \item[cd] \hfill \\
+        Change le dossier courant.
+    \item[cp] \hfill \\
+        Copie un fichier à un autre endroit.
+    \item[mv] \hfill \\
+        Déplace un fichier.
+    \item[cat] \hfill \\
+        Affiche un fichier.
+\end{description}
+
+On note également l'apparition de \textbf{man} qui permet d'obtenir toutes les
+informations nécessaires à l'utilisation d'une commande en tapant man suivi de
+celle ci.
+
+\subsection{La console sur Unix}
+À partir de l'année prochaine (ou dès maintenant si vous voulez !) vous allez
+utiliser des systèmes d'exploitation Unix, dans ces derniers l'interface en
+ligne de commandes est encore très présente et est de ce fait très développée
+afin de pouvoir n'utiliser qu'elle sans être limité.\\
+C'est l'une des raisons qui fait que la majorité des serveurs tourne sous des
+OS de ce genre car lors d'un accès à distance seul un
+TTY\footnote{http://en.wikipedia.org/wiki/Teleprinter} est accessible.\\
+On ne détaillera pas ici toutes les merveilles que vous pouvez y trouver mais
+si vous êtes intéressés n'hésitez pas à vous renseigner sur internet où à
+demander à vos ACDC.
+
+\subsection{Utilisation en \csharp}
+La manipulation de la console en \csharp s'effectue au travers de la
+classe\ldots Console !\\
+Sa documentation est disponible dans la bible du \csharp: MSDN.
+Vous pouvez y accéder ici:
+http://msdn.microsoft.com/en-us/library/system.console\\
+Votre premier travail dans ce TP sera d'aller rechercher (pas forcément dans
+la page donnée au dessus) au moins les fonctions suivantes afin de comprendre
+leur utilisation:
+
+\begin{enumerate}
+    \item Console.Write
+    \item Console.WriteLine
+    \item Console.Read
+    \item Console.ReadLine
+    \item Convert.ToInt32
+    \item Convert.ToFloat
+\end{enumerate}
+
+\subsection{La fonction Main}
+Lorsque vous compilerez et exécuterez votre programme, la première et seule 
+fonction appelée sera la fonction \codeil{Main()}.\\
+Cette fonction est le point d'entrée de votre programme, c'est donc à l'intérieur
+de celle-ci que vous pouvez faire appel à vos autres fonctions afin de les tester.
+
+\newpage

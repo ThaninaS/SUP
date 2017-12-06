@@ -1,0 +1,25 @@
+\subsection{Exercice 3: Triforce}
+
+Écrivez la fonction \codeil{Triforce} qui affiche une triforce en jaune sur fond bleu
+et change le titre de la fenêtre en "Triforce".\\
+Vous devez également appeler \codeil{Console.ResetColor()} à la fin pour ne pas
+conserver vos changements.\\
+PROTIP: Ces modifications ne sont pas faites par des fonctions mais en
+modifiant des propriétés de \codeil{Console} (cherchez "Console Class" sur MSDN).
+Renseignez-vous également sur \codeil{ConsoleColor}.\\
+
+Prototype:
+\begin{code}
+static void Triforce()
+\end{code}
+
+Exemple:
+\begin{verbatim}
+> test_triforce.exe
+   /\
+  /__\
+ /\  /\
+/__\/__\
+\end{verbatim}
+
+Bonus: n'utilisez qu'un seul \codeil{Write}, parce qu'en une ligne c'est mieux.

@@ -1,0 +1,36 @@
+\subsection{Exercise 4: MCQte}
+
+Write the \codeil{QCM} function that asks the user a question and prints:\\
+- "Good job bro!" if the answer is right.\\
+- "You lose... The answer was X." if the answer is wrong, replacing X by
+the number of the right answer.\\
+- "So counting is too hard, n00b..." if the input is invalid.\\
+The \codeil{ansX} options only contain the text of the answer, it is your job to
+print the "X) " at the beginning of each one.\\
+The \codeil{answer} parameter contains the number of the right answer.\\
+Do not handle the cases in which the user doesn't type a number.\\
+PROTIP: to concatenate two strings you can use the operator \codeil{+}.\\
+
+Prototype:
+\begin{code}
+static void QCM(string question,
+                string ans1,
+                string ans2,
+                string ans3,
+                string ans4,
+                int answer)
+\end{code}
+
+Example:
+\begin{verbatim}
+> test_QCM.exe
+What's the difference between a pigeon ?
+1) The legs, especially the left one
+2) Yes
+3) Obiwan Kenobi
+4) The D answer
+2
+You lose... The answer was 1.
+\end{verbatim}
+
+Bonus: handle incorrect input (search how to use \codeil{try \ldots{} catch}).

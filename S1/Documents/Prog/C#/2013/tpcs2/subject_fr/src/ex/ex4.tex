@@ -1,0 +1,36 @@
+\subsection{Exercice 4: Dans ton QCM}
+
+Écrivez la fonction \codeil{QCM} qui pose une question à l'utilisateur et affiche:\\
+- "Good job bro!" si la réponse est correcte.\\
+- "You lose... The answer was X." si la réponse est fausse, en remplaçant X par
+le numéro de la bonne réponse.\\
+- "So counting is too hard, n00b..." si l'entrée est invalide.\\
+Les Paramètres \codeil{ansX} contiennent seulement le texte de l'option, c'est à vous
+d'afficher le "X) " au début de chacune.\\
+Le paramètre \codeil{answer} contient le numéro de la bonne réponse.\\
+Vous n'avez pas à gérer le cas où l'utilisateur n'entrerait pas un nombre.\\
+PROTIP: Pour concaténer deux strings vous pouvez utiliser l'opérateur \codeil{+}.\\
+
+Prototype:
+\begin{code}
+static void QCM(string question,
+                string ans1,
+                string ans2,
+                string ans3,
+                string ans4,
+                int answer)
+\end{code}
+\newpage
+Exemple:
+\begin{verbatim}
+> test_QCM.exe
+Quelle est la différence entre un pigeon ?
+1) Les deux pattes, surtout la gauche
+2) Oui
+3) Obiwan Kenobi
+4) La réponse D
+2
+You lose... The answer was 1.
+\end{verbatim}
+
+Bonus: gérer les entrées incorrectes (cherchez comment utiliser \codeil{try \ldots{} catch}).

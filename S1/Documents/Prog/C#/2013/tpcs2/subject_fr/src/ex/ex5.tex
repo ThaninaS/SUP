@@ -1,0 +1,24 @@
+\subsection{Exercice 5: \_\_ \_\_\_ .\_. ... .}
+
+Écrivez la fonction \codeil{Morse} qui produit le son correspondant au message donné en
+entrée.\\
+Ce message sera constitué des caractères '\_', '.' et ' ' uniquement.\\
+Un '\_' correspond à un bip de 450ms, un '.' à un bip de 150ms et ' ' à une pause
+de 450ms.\\
+Les sons doivent avoir une fréquence de 900Hz.\\
+Cette fonction doit comme le reste du TP être récursive.\\
+PROTIP: vous pouvez utiliser \codeil{Console.Beep(f, n)} pour produire un son de
+fréquence f Hz pendant n millisecondes et \codeil{System.Threading.Thread.Sleep(n)}
+pour mettre le programme en pause pendant n millisecondes.\\
+
+Prototype:
+\begin{code}
+static void Morse()
+\end{code}
+
+Exemple:
+\begin{verbatim}
+> test_morse.exe
+.___ .____. ._ .. __ . __ . ... ._ _._. _.. _._.
+bip biiip biiip… (rien d'affiché)
+\end{verbatim}

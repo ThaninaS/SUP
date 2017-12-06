@@ -1,0 +1,88 @@
+\section{Course}
+
+\subsection{The console}
+As a good Windows user, you like to click on buttons with your mouse.
+But you may not know that another world exists -- faster, darker, a world that will make
+any average person think that you're a hacker: the console.\\
+Indeed, in the old days\footnote{Earlier\ldots{} 1970!}, computer scientists had at their disposal only a command line interface on a screen displaying only 80 columns.\\
+Despite the massive use of graphical interfaces (GUI = Graphical User
+Interface) nowadays, the console and its text commands still remain thanks to its
+efficiency.
+
+\subsection{The Windows terminal}
+Every Windows version has a console inherited from MS-DOS
+that you can open by running \textbf{cmd.exe} (with Win+R for instance):
+the Windows terminal.\\
+In this terminal you can execute a whole lot of commands and group them
+in files to automate actions easily.\footnote{Yes, a .bat file is not only used to destroy your computer.}\\
+Here are the main commands:
+
+\begin{description}
+    \item[dir] \hfill \\
+        Lists the files in the current directory.
+    \item[cd] \hfill \\
+        Changes the current directory.
+    \item[copy] \hfill \\
+        Copies a file to another place.
+    \item[mov] \hfill \\
+        Moves a file or directory.
+    \item[print] \hfill \\
+        Prints a file.
+\end{description}
+
+You an also run an executable just by typing its name (prefixed by the path to it if
+different from the current one). This interface is very limited and outdated and is only kept for compatibility reasons.
+
+\subsection{Powershell}
+As its name says --a shell is a command interpreter, it is
+a new version of the Windows terminal introduced in Windows 7.\\
+Its functionalities are closer to their Unix equivalents with similar command names
+and the appearance of advanced functions like stream redirection.\footnote{http://www.tldp.org/LDP/abs/html/io-redirection.html}\\
+The previously explained commands become the following:
+\newpage
+\begin{description}
+    \item[ls] \hfill \\
+        Lists the files in the current directory.
+    \item[cd] \hfill \\
+        Changes the current directory.
+    \item[cp] \hfill \\
+        Copies a file to another place.
+    \item[mv] \hfill \\
+        Moves a file or directory.
+    \item[cat] \hfill \\
+        Prints a file.
+\end{description}
+
+We also notice the appearance of \textbf{man} that allows the user to get all the necessary
+information about a command just by typing man before.
+
+\subsection{The console on Unix}
+From next year (or right now if you want!) you'll be using
+Unix compliant operating systems, in which the command line interface
+is still very present and has been developed extensively in order to offer unlimited use.\\
+One of the reasons why the vast majority of the servers run on this kind of OS is that when you connect to them you only have access to a TTY.\footnote{http://en.wikipedia.org/wiki/Teleprinter}\\
+We will not speak in detail about all the wonders you can find in these environments
+but if you're interested don't hesitate to search on the internet or ask your ACDC.
+
+\subsection{The use in \csharp}
+The management of the console in \csharp is done through\ldots the Console class!\\
+Its reference is available on the \csharp bible: MSDN.\\
+You can access it here:
+http://msdn.microsoft.com/en-us/library/system.console\\
+Your first work in this practical will be to search (not necessarily in the above page)
+at least the following functions to understand how to use them:
+
+\begin{enumerate}
+    \item Console.Write
+    \item Console.WriteLine
+    \item Console.Read
+    \item Console.ReadLine
+    \item Convert.ToInt32
+    \item Convert.ToFloat
+\end{enumerate}
+
+\subsection{The Main function}
+When you will compile and run your program, the first and only function that will be called is \codeil{Main()}.
+This function is the entry point of your program, so if you want to call your functions, you have to do it here.
+
+\newpage

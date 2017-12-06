@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundMap", "BackgroundMap\BackgroundMap\BackgroundMap.csproj", "{40466E66-010E-437A-8476-86D28E7533C3}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "BackgroundMapContent", "BackgroundMap\BackgroundMapContent\BackgroundMapContent.contentproj", "{0A922BF5-7243-44C5-A701-1047B79084F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40466E66-010E-437A-8476-86D28E7533C3}.Debug|x86.ActiveCfg = Debug|x86
+		{40466E66-010E-437A-8476-86D28E7533C3}.Debug|x86.Build.0 = Debug|x86
+		{40466E66-010E-437A-8476-86D28E7533C3}.Release|x86.ActiveCfg = Release|x86
+		{40466E66-010E-437A-8476-86D28E7533C3}.Release|x86.Build.0 = Release|x86
+		{0A922BF5-7243-44C5-A701-1047B79084F8}.Debug|x86.ActiveCfg = Debug|x86
+		{0A922BF5-7243-44C5-A701-1047B79084F8}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

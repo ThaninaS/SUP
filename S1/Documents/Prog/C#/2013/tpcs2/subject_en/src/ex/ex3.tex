@@ -1,0 +1,24 @@
+\subsection{Exercise 3: Triforce}
+
+Write the \codeil{Triforce} function that prints a triforce in yellow on a blue background
+and changes the title to "Triforce".\\
+You must also call \codeil{Console.ResetColor()} at the end to reset the console to its normal state.\\
+PROTIP: these changes are not done through function calls but by modifying the \codeil{Console} properties
+(look for "Console Class" on MSDN).
+Also search for \codeil{ConsoleColor}.\\
+
+Prototype:
+\begin{code}
+static void Triforce()
+\end{code}
+
+Example:
+\begin{verbatim}
+> test_triforce.exe
+   /\
+  /__\
+ /\  /\
+/__\/__\
+\end{verbatim}
+
+Bonus: Use only one \codeil{Write}, because one line is better.

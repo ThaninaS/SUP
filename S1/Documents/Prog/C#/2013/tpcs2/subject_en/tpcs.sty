@@ -1,0 +1,156 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%            styles pour les sujets de TP C#
+%
+%                    Nathalie Bouquet (sept.04)
+%                    Modifié par Julien Birene (nov.08)
+%                    Modifié par Jean-Baptiste GALET(nov.09)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  pour le français et les images
+\usepackage[utf8]{inputenc}				% Pour les caractères accentués
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Taille de la page
+\textwidth 16cm
+\textheight 23.5cm
+\headsep 1cm
+\topmargin -1.5cm
+\oddsidemargin 0cm
+\setlength{\unitlength}{1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%                    Entete et titre feuille TP
+%
+%
+%            Utilisation : enteteTPCS{<no>}{<date>}{<titre>}
+%
+\usepackage{fancyhdr}
+\newcommand{\enteteTPCS}[3]{
+\pagestyle{fancy} \lhead{{\bf \csharp}\\
+{\sc tp} $#1$ -- #2} \rhead{{\small Info-Sup}\\ {\sc Epita}}
+\lfoot{\includegraphics[width=3cm]{logoepita}}
+\rfoot{\includegraphics[width=3cm]{logo}}
+\begin{center}
+{\Large {\bf #3}}
+\end{center}
+\bigskip}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%        si besoin de graph
+%
+%\usepackage{graphicx,color}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   les symboles mathématiques
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  environnement pour les citations
+%  environnement pour le code
+%  environnement pour la correction (pdf)
+%  environnement pour les hints
+%
+\usepackage{alltt}
+\usepackage{fancybox}
+\usepackage{framed}
+\usepackage{sectionbox}
+\usepackage{hyperref}
+
+\newenvironment{fancyquote}[2]
+{
+\begin{center}
+\begin{minipage}{0.8\textwidth}
+\og \emph{#1} \fg
+\begin{flushright}
+#2
+\end{flushright}
+\end{minipage}
+\end{center}
+}
+
+\renewenvironment{leftbar}{%
+ \def\FrameCommand{\vrule width .5pt \hspace{10pt}}%
+ \MakeFramed {\advance\hsize-\width \FrameRestore}}%
+{\endMakeFramed}
+
+\newenvironment{hint}{%
+  \begin{flushright}%
+	\begin{minipage}{0.9\textwidth}%
+	\textbf{Hint}%
+	\begin{leftbar}%
+}{%
+	\end{leftbar}%
+  \end{minipage}%
+	\end{flushright}%
+}
+
+\newenvironment{code}%
+{
+\definecolor{sectboxfillcol}{rgb}{1,1,1}
+\VerbatimEnvironment
+\begin{center}
+\doublesectionbox
+\begin{sectionbox}{}
+\begin{minipage}{0.9\textwidth}
+\begin{Verbatim}
+}%
+{
+\end{Verbatim}
+\end{minipage}
+\end{sectionbox}
+\end{center}
+}
+
+\newenvironment{correction}%
+{
+\definecolor{sectboxfillcol}{rgb}{0.8,1,0.8}
+\VerbatimEnvironment
+\begin{center}
+\shadowsectionbox
+\begin{sectionbox}{}
+\begin{minipage}{0.9\textwidth}
+\begin{Verbatim}
+}%
+{
+\end{Verbatim}
+\end{minipage}
+\end{sectionbox}
+\end{center}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    C# raccourcis et environnements
+%
+
+% C# en petites capitales !
+\newcommand{\csharp}{\textsc{C\#} }
+% \code : pour insérer du C# sur une ligne : (attention aux symboles !)
+\newcommand{\codeil}{\texttt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Divers
+
+% euro !
+\usepackage{textcomp}
+% degré : °
+\newcommand{\de}{\textsuperscript{o}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Image de fond
+%    La commande \background affiche l'image de fond sur toutes les pages
+%    USELESS pour le moment
+\usepackage{tikz}
+
+\newcommand{\addbackground}{
+\begin{tikzpicture}[remember picture,overlay]
+	\node[text opacity=0.1] at (current page.center){\includegraphics[height=0.5\textheight]{logo}};
+\end{tikzpicture}
+}

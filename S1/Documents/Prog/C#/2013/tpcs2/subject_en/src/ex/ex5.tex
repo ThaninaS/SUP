@@ -1,0 +1,21 @@
+\subsection{Exercise 5: \_\_ \_\_\_ .\_. ... .}
+
+Write the \codeil{Morse} function that produces the sound corresponding to the message given in input.\\
+This message will be constituted of the '\_', '.' and ' ' characters only.\\
+A '\_' correponds to a 450ms beep, a '.' to a 150ms beep and ' ' to a 450ms pause.\\
+The sounds must have a frequency of 900Hz.\\
+This function must, as usual, be recursive.\\
+PROTIP: you can use \codeil{Console.Beep(f, n)} to produce a sound of frequency f Hz during n milliseconds
+and \codeil{System.Threading.Thread.Sleep(n)} to pause the program for n milliseconds.\\
+
+Prototype:
+\begin{code}
+static void Morse()
+\end{code}
+
+Example:
+\begin{verbatim}
+> test_morse.exe
+.___ .____. ._ .. __ . __ . ... ._ _._. _.. _._.
+bip biiip biiip… (nothing is displayed)
+\end{verbatim}
